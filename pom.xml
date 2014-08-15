@@ -42,6 +42,12 @@
         <upstream.version>1.1.0</upstream.version>
         <upstream.url>https://raw.github.com/sindresorhus/screenfull.js/gh-pages/dist/</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
+        <requirejs>
+            {
+            "paths": { "screenfulljs": "screenfull" }
+            }
+        </requirejs>
+        
     </properties>
 
     <build>
